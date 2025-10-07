@@ -1,0 +1,73 @@
+.services-container {
+  padding: 100px 40px;
+  background-color: var(--light-gray);
+  text-align: center;
+}
+
+.services-title {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 60px;
+  color: var(--text-primary);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card1 {
+  /* background-image: url("./university.jpg"); */
+  background-size: cover;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04), 0 10px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card2 {
+  /* background-image: url("./visa.jpg"); */
+  background-size: cover;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04), 0 10px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card3 {
+  /* background-image: url("./visa_3.jpg"); */
+  background-size: cover;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04), 0 10px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card1:hover,
+.service-card2:hover,
+.service-card3:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06), 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card1 h3,
+.service-card2 h3,
+.service-card3 h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000000;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.service-card1 p,
+.service-card2 p,
+.service-card3 p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #000000;
+}
