@@ -1,38 +1,87 @@
 .hero-container {
   height: 90vh;
   width: 100%;
-  background-image: url("/hero.jpg");
+  background-image: url("/hero.jpg"); /* Sets the first image */
   background-size: cover;
   background-position: center;
+
+  animation: hero-slideshow 25s infinite;
+
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
 .hero-content {
   color: rgb(255, 255, 255);
   padding: 40px 70px;
-  max-width: 100%;
+  max-width: 1000px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
+
 .hero-content h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 .hero-content p {
-  font-size: 1.7rem;
-  font-weight: 500;
-  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
+
 .hero-button {
   padding: 15px 30px;
   font-size: 1rem;
-  background-color: #cc4141;
+  background-color: red;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
 }
+
 .hero-button:hover {
-  background-color: #710202;
+  background-color: var(--accent-blue);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes hero-slideshow {
+  10% {
+    background-image: url("/hero.jpg");
+  }
+
+  30% {
+    background-image: url("/hero1.jpg");
+  }
+
+  45% {
+    background-image: url("/hero2.jpg");
+  }
+
+  62% {
+    background-image: url("/hero2.jpg");
+  }
+
+  65% {
+    background-image: url("/hero3.jpg");
+  }
+
+  97% {
+    background-image: url("/hero3.jpg");
+  }
+
+  100% {
+    background-image: url("/hero.jpg");
+  }
 }
