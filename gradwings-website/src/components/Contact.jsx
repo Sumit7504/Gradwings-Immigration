@@ -75,7 +75,7 @@ const Contact = () => {
           />
         </div>
         <button type="submit" className="submit-btn">
-          submit your application
+          Submit
         </button>
       </form>
     </div>
