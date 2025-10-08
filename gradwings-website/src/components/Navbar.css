@@ -4,6 +4,7 @@
   align-items: center;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 15px 120px;
+  transition: padding 0.3s ease-in-out;
 }
 
 .navbar-logo {
@@ -12,8 +13,8 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.25rem;
+  font-weight: 550;
   display: flex;
   align-items: center;
 }
@@ -40,19 +41,22 @@
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 400;
 }
 
 .menu-icon {
   display: none;
   font-size: 2rem;
-  color: white;
+  color: #333;
   cursor: pointer;
 }
 
-/* --- Responsive Styles for Mobile --- */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -62,14 +66,22 @@
     left: 0;
     background-color: rgba(26, 37, 60, 0.98);
     backdrop-filter: blur(10px);
+    padding-bottom: 15px;
   }
+
   .nav-links.active {
     display: flex;
   }
+
   .nav-links li {
     text-align: center;
     margin: 15px 0;
   }
+
+  .nav-links a {
+    color: #ffffff;
+  }
+
   .menu-icon {
     display: block;
   }
